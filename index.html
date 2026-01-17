@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiimeer AI Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="chat-app">
+      <header class="chat-header">
+        <div>
+          <p class="status">Online</p>
+          <h1>Hiimeer</h1>
+        </div>
+        <button class="ghost" id="clearBtn" type="button">Clear</button>
+      </header>
+
+      <section class="chat-window" id="chatWindow" aria-live="polite"></section>
+
+      <form class="chat-input" id="chatForm">
+        <label class="sr-only" for="userInput">Type a message</label>
+        <input
+          id="userInput"
+          name="userInput"
+          placeholder="Type your message..."
+          autocomplete="off"
+        />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
